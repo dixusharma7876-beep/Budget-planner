@@ -1,0 +1,88 @@
+/* Navbar container */
+.navbar {
+    width: 100%;
+    background-color: #1976d2; /* Material Blue */
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    text-align: center !important;
+    
+}
+
+/* Navbar title */
+.navbar h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Toggle button row */
+.toggle-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    transition: background-color 0.2s;
+    position: fixed;
+    top: -4px;
+    left: 2px;
+    width: 40px;
+    height: 42px;
+    
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for toggle button */
+.toggle-button-row:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Material icon styling */
+.toggle-button-row mat-icon {
+    font-size: 28px;
+    color: #fff;
+}
+.slide-out-pannel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3 ease ease-out;
+    z-index: 1000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: cornflowerblue;
+}
+.slide-out-pannel.slide-out{
+    transform: translateX(-100%);
+}
+.slide-out-content{
+    margin-top: 80px;
+    padding: 20px;
+}
+.edit-col{
+color: #e12323;
+cursor: pointer;
+font-size: 18px;
+padding: 10px;
+border-radius: 10px;
+background-color: #ffff;
+margin-bottom: 10px;
+}
+.edit-col-hover{
+    color: #1976d2;
+}

@@ -1,0 +1,56 @@
+<app-side-nav></app-side-nav>
+<div class="profile-form">
+    <h2>User Profile</h2>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" formControlName="name" placeholder="Enter Your Name" required>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" formControlName="age" placeholder="Enter Your Age" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" formControlName="dob" placeholder="Select your date of birth" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="gander">Gender:</label>
+                <select id="gender" formControlName="gender" required>
+                    <option value="Select Gender"></option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" formControlName="email" placeholder="Enter your Email" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="occupation">Occupation:</label>
+                <input type="text" id="occupation" formControlName="occupation" placeholder="Enter your Occupation"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="contact"> Contact:</label>
+                <input type="text" id="contact" formControlName="contact" placeholder="Enter your contact number"
+                    required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="address">Adress:</label>
+                <input type="text" id="address" formControlNmae="address" placeholder="Enter your address" required>
+            </div>
+        </div>
+        <h2>
+            <button type="submit">Save</button>
+        </h2>
+    </form>
+</div>

@@ -1,0 +1,150 @@
+/* ===== Page Background ===== */
+.main-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ebebeb, #6f42c1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Main Card ===== */
+.container {
+  background: #fbfbfb;
+  width: 100%;
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* ===== Headings ===== */
+.container h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.container h3 {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ===== Form Styling ===== */
+.input-form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* ===== Dropdown ===== */
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #6f42c1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(111, 66, 193, 0.2);
+}
+
+/* ===== Total Box ===== */
+.total-todoTrans {
+  margin-top: 15px;
+  padding: 14px;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(90deg, #3056c7, #a4a3a6);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Divider ===== */
+hr {
+  margin: 25px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+/* ===== Table ===== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.table thead {
+  background: linear-gradient(90deg, #4e73df, #6f42c1);
+  color: white;
+}
+
+.table th {
+  padding: 15px;
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  max-width: 700px;
+}
+
+.table td {
+  padding: 14px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  text-align: left;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9ff;
+  transition: 0.2s ease;
+}
+
+/* ===== Back Button ===== */
+.btn-primary {
+  margin-top: 25px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #4e73df, #6f42c1);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+  }
+
+  .container h2 {
+    font-size: 22px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 13px;
+  }
+}

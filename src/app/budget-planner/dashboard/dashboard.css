@@ -1,0 +1,364 @@
+/* Page background */
+:host {
+    display: block;
+    background: #f5f7fa;
+    min-height: 100vh;
+}
+
+/* Main container */
+.container {
+    padding: 30px 40px;
+}
+
+/* Card grid */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card base */
+.card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px 26px 60px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+    max-width: 420px;
+}
+
+/* Card header */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Icon base */
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Income icon */
+.income-icon {
+    background: #e6c27a;
+}
+
+.income-icon mat-icon {
+    color: #ff0000;
+    font-size: 26px;
+}
+
+/* Expense icon */
+.expense-icon {
+    background: #f28b82;
+}
+
+.expense-icon mat-icon {
+    color: #ff1818;
+    font-size: 26px;
+}
+
+/* Title */
+.card-header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2c2c2c;
+    text-align: center;
+}
+
+/* Divider */
+.card hr {
+    border: none;
+    height: 1px;
+    background: #e4e4e4;
+    margin: 18px 0;
+}
+
+/* Content layout */
+.income-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Column */
+.month {
+    flex: 1;
+}
+
+/* Section title */
+.month h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Month list */
+.month ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.month ul li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+/* Current month amount */
+.month p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Income amount color */
+.card:first-child .month p {
+    color: #c9a34f;
+}
+
+/* Expense amount color */
+.card:last-child .month p {
+    color: #f28b82;
+}
+
+/* View button */
+.button {
+    position: absolute;
+    bottom: 18px;
+    right: 22px;
+    background: #3f51b5;
+    color: #ffffff;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background: #303f9f;
+    transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .income-details {
+        flex-direction: column;
+    }
+
+    .button {
+        right: 18px;
+    }
+}
+/* Card Container */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Header Icon */
+.icon-todo-icon {
+  background: #f3f6ff;
+  color: #4f46e5;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-todo-icon mat-icon {
+  font-size: 22px;
+}
+
+/* Header Title */
+.card-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+/* Divider */
+.card hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 8px 0;
+}
+
+/* Transaction List */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Transaction Item */
+.card ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.card ul li:last-child {
+  border-bottom: none;
+}
+
+/* Status Icon */
+.transaction-status mat-icon {
+  color: #f59e0b;
+  font-size: 20px;
+}
+
+/* Transaction Text */
+.transaction-details {
+  font-size: 14px;
+  color: #374151;
+  flex: 1;
+  height: 26px;
+}
+
+/* View Button */
+.button {
+  margin-top: 12px;
+  align-self: flex-end;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #ffffff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(79, 70, 229, 0.35);
+}
+/* Total Card */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 345px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+     
+}
+
+/* Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+/* Icons */
+.icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-icon {
+  background: #eef2ff;
+  color: #6366f1;
+}
+
+.income-icon {
+  background: #fef2f2;
+  color: #10b981;
+}
+
+.expense-icon {
+  background: #fef2f2;
+  color: #ef4444;
+}
+
+.trans-icon {
+  background: #fef9c3;
+  color: #eab308;
+}
+
+/* Divider */
+.card hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 6px 0;
+}
+
+.total-line {
+  margin: 10px 0;
+}
+
+/* Items */
+.total-details,
+.total-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.total-details h3,
+.total-item h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin: 0;
+  flex: 1;
+}
+
+/* Amount */
+.total-details p,
+.total-item p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}

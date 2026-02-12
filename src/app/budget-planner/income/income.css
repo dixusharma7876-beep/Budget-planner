@@ -1,0 +1,200 @@
+/* ===== GLOBAL PAGE STYLE ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e6f7f8, #f4f7fb);
+  min-height: 100vh;
+}
+
+/* ===== TOP NAVBAR ===== */
+.navbar {
+  background: linear-gradient(90deg, #0f8b8d, #7ed6df);
+  padding: 0.1px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== MAIN LAYOUT ===== */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 15px;
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 760px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* ===== HEADINGS ===== */
+h2, h3 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 21px;
+}
+
+/* ===== FORM STYLING ===== */
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* ===== INPUT & SELECT FIELDS ===== */
+input[type="text"],
+input[type="number"],
+select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+  background: #f9fafb;
+}
+
+input:focus,
+select:focus {
+  border-color: #0f8b8d;
+  box-shadow: 0 0 0 3px rgba(15, 139, 141, 0.15);
+  background: #ffffff;
+}
+
+/* ===== TOTAL INCOME DISPLAY ===== */
+.total-income {
+  background: #e6fffa;
+  border-left: 5px solid #0f8b8d;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #065f60;
+  text-align: center;
+}
+
+/* ===== BUTTON STYLING ===== */
+button {
+  padding: 12px;
+  background: linear-gradient(90deg, #0f8b8d, #20c997);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 139, 141, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Back & Save buttons spacing */
+.input-form button {
+  margin-top: 8px;
+}
+
+/* ===== TABLE STYLING ===== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.table thead {
+  background: #0f8b8d;
+  color: white;
+}
+
+.table th,
+.table td {
+  padding: 12px 14px;
+  text-align: center;
+}
+
+.table th {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background: #f1fafa;
+}
+
+.table td {
+  color: #374151;
+}
+
+/* ===== DISABLED DROPDOWN ===== */
+.disabled-dropdown {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  th, td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .navbar {
+    font-size: 20px;
+  }
+}

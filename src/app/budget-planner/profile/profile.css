@@ -1,0 +1,114 @@
+/* ===== Page Background ===== */
+body {
+  margin: 0;
+}
+
+.profile-form {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #4e73df, #6f42c1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Card Container ===== */
+.profile-form form {
+  background: #ffffff;
+  width: 100%;
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Heading ===== */
+.profile-form h2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* ===== Form Layout ===== */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* ===== Labels ===== */
+label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* ===== Inputs ===== */
+input,
+select {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #6f42c1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(111, 66, 193, 0.2);
+}
+
+/* ===== Save Button ===== */
+button[type="submit"] {
+  width: 200px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4e73df, #6f42c1);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Center button */
+.profile-form h2:last-of-type {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .profile-form form {
+    padding: 25px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}
